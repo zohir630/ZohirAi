@@ -1,0 +1,21 @@
+name: Unzip website
+on:
+  workflow_dispatch:
+  push:
+    paths: ["ZohirAi-website.zip"]
+permissions:
+  contents: write
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          unzip -o ZohirAi-website.zip
+          rm ZohirAi-website.zip
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Unzip website" || echo "nothing to commit"
+          git push
