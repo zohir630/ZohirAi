@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,24 +21,25 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0
 .lang{background:none;border:1px solid var(--line);color:var(--text);border-radius:99px;padding:7px 14px;font:inherit;font-size:13px;cursor:pointer}
 .btn{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;border-radius:99px;padding:14px 26px;box-shadow:0 10px 34px rgba(217,38,28,.38);transition:.2s}
 .btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.s{padding:9px 18px;font-size:14px;box-shadow:none}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:36px 0 60px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;padding:24px 0 40px}
 .pill{display:inline-block;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:99px;padding:6px 14px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--mut)}
-h1{font-size:clamp(34px,6vw,58px);line-height:1.12;letter-spacing:-1.5px;margin:18px 0}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;letter-spacing:-1.5px;margin:18px 0}
 h1 b{background:linear-gradient(90deg,#ff5a4d,#d9261c 55%,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{color:var(--mut);font-size:18px;max-width:480px}.cta{margin:28px 0 12px}.meta{color:var(--mut);font-size:13px}
-.ph{display:flex;justify-content:center;position:relative}.ph img{width:min(300px,70%);filter:drop-shadow(0 30px 50px rgba(0,0,0,.6))}
-.ph img+img{width:min(230px,52%);margin-left:-70px;margin-top:70px}
-h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.8px;text-align:center;margin:0 0 10px}.lead{text-align:center;color:var(--mut);margin-bottom:34px}
-section{padding:54px 0}
-.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.c{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}.c i{font-style:normal;font-size:26px;display:block;margin-bottom:10px}.c h3{font-size:17px;margin-bottom:6px}.c p{color:var(--mut);font-size:14.5px}
-.sh{display:flex;gap:18px;overflow-x:auto;padding:6px 20px 20px;scroll-snap-type:x mandatory;justify-content:safe center}
-.sh img{height:520px;width:auto;scroll-snap-align:center;flex:none;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
-.st{counter-reset:s}.st .c{position:relative;padding-top:50px}.st .c:before{counter-increment:s;content:counter(s);position:absolute;top:16px;left:24px;width:28px;height:28px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-weight:700;font-size:14px}
+.sub{color:var(--mut);font-size:16px;max-width:480px}.cta{margin:28px 0 12px}.meta{color:var(--mut);font-size:13px}
+.ph{display:flex;justify-content:center;position:relative}.ph img{width:min(190px,46%);filter:drop-shadow(0 24px 34px rgba(0,0,0,.65));animation:fl 6s ease-in-out infinite}
+.ph img+img{width:min(160px,38%);margin-left:-44px;margin-top:56px;animation-delay:-3s}
+@keyframes fl{50%{transform:translateY(-8px)}}
+h2{font-size:clamp(21px,3.2vw,28px);letter-spacing:-.6px;text-align:center;margin:0 0 6px}.lead{text-align:center;color:var(--mut);font-size:14px;margin-bottom:20px}
+section{padding:32px 0}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;transition:.2s}.c:hover{border-color:rgba(217,38,28,.5);transform:translateY(-2px)}.c i{font-style:normal;font-size:16px;width:32px;height:32px;display:grid;place-items:center;background:rgba(217,38,28,.16);border-radius:9px;margin-bottom:8px}.c h3{font-size:14px;margin-bottom:3px}.c p{color:var(--mut);font-size:12.5px;line-height:1.5}
+.sh{display:flex;gap:14px;overflow-x:auto;padding:6px 20px 20px;scroll-snap-type:x mandatory;justify-content:safe center}
+.sh img{height:360px;width:auto;scroll-snap-align:center;flex:none;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
+.st{counter-reset:s}.st .c{position:relative;padding:14px 14px 14px 52px}.st .c:before{counter-increment:s;content:counter(s);position:absolute;top:14px;left:14px;width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-weight:700;font-size:14px}
 .note{max-width:620px;margin:22px auto 0;text-align:center;color:var(--mut);font-size:13.5px}
-.fin{text-align:center;background:linear-gradient(135deg,rgba(217,38,28,.22),rgba(120,70,255,.14));border:1px solid var(--line);border-radius:28px;padding:44px 20px}
+.fin{text-align:center;background:linear-gradient(135deg,rgba(217,38,28,.22),rgba(120,70,255,.14));border:1px solid var(--line);border-radius:28px;padding:28px 20px}
 footer{text-align:center;color:var(--mut);font-size:13px;padding:40px 0}
-@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center}.sub{margin:auto}.sh img{height:440px}.ph{margin-top:10px}}
+@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center}.sub{margin:auto}.sh img{height:320px}.ph{margin-top:6px}.g{grid-template-columns:repeat(2,1fr)}.st.g{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -54,7 +55,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:40px 0}
   <h1><span data-l="bn">আপনার বন্ধুর মতো <b>এআই সহকারী</b></span><span data-l="en">Your friendly <b>AI assistant</b></span></h1>
   <p class="sub"><span data-l="bn">বাংলায় লিখলে বাংলায়, ইংরেজিতে লিখলে ইংরেজিতে উত্তর দেয়। কোডিং থেকে প্রতিদিনের প্রশ্ন, সবকিছুতে পাশে আছে।</span><span data-l="en">Write in Bangla, get Bangla. Write in English, get English. From coding to everyday questions, it has your back.</span></p>
   <div class="cta"><a class="btn dl" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg><span data-l="bn">অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন</span><span data-l="en">Download for Android</span></a></div>
-  <p class="meta"><span data-l="bn">ফ্রি ডাউনলোড · APK ফাইল</span><span data-l="en">Free download · APK file</span></p>
+  <p class="meta"><span data-l="bn">বিনামূল্যে ডাউনলোড · এপিকে ফাইল</span><span data-l="en">Free download · APK file</span></p>
  </div>
  <div class="ph"><img src="img/chat-bn.webp" alt="ZohirAi chat"><img src="img/models.webp" alt="Models"></div>
 </header>
@@ -63,12 +64,12 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:40px 0}
  <h2><span data-l="bn">কেন ZohirAi?</span><span data-l="en">Why ZohirAi?</span></h2>
  <p class="lead"><span data-l="bn">সহজ, দ্রুত আর আপনার ভাষায়।</span><span data-l="en">Simple, fast and in your language.</span></p>
  <div class="g">
-  <div class="c"><i>🌐</i><h3><span data-l="bn">বাংলা ও English</span><span data-l="en">Bangla &amp; English</span></h3><p><span data-l="bn">যে ভাষায় লিখবেন, সেই ভাষাতেই উত্তর। পুরো অ্যাপও দুই ভাষায়।</span><span data-l="en">It answers in the language you write. The whole app works in both too.</span></p></div>
-  <div class="c"><i>⚡</i><h3><span data-l="bn">একাধিক মডেল</span><span data-l="en">Multiple models</span></h3><p><span data-l="bn">Recommended, Fast বা Powerful, কাজ বুঝে মডেল বেছে নিন।</span><span data-l="en">Pick Recommended, Fast or Powerful, whatever fits the task.</span></p></div>
-  <div class="c"><i>💻</i><h3><span data-l="bn">কোডিং সহায়ক</span><span data-l="en">Built for coding</span></h3><p><span data-l="bn">সুন্দর কোড ব্লক, এক ট্যাপে কপি আর ফুল-স্ক্রিন প্রিভিউ।</span><span data-l="en">Clean code blocks, one-tap copy and full-screen preview.</span></p></div>
+  <div class="c"><i>🌐</i><h3><span data-l="bn">বাংলা ও ইংরেজি</span><span data-l="en">Bangla &amp; English</span></h3><p><span data-l="bn">যে ভাষায় লিখবেন, সেই ভাষাতেই উত্তর। পুরো অ্যাপও দুই ভাষায়।</span><span data-l="en">It answers in the language you write. The whole app works in both too.</span></p></div>
+  <div class="c"><i>⚡</i><h3><span data-l="bn">একাধিক মডেল</span><span data-l="en">Multiple models</span></h3><p><span data-l="bn">প্রস্তাবিত, দ্রুত বা শক্তিশালী, কাজ বুঝে মডেল বেছে নিন।</span><span data-l="en">Pick Recommended, Fast or Powerful, whatever fits the task.</span></p></div>
+  <div class="c"><i>💻</i><h3><span data-l="bn">কোডিং সহায়ক</span><span data-l="en">Built for coding</span></h3><p><span data-l="bn">সুন্দর কোড ব্লক, এক ট্যাপে কপি আর পূর্ণ স্ক্রিন প্রিভিউ।</span><span data-l="en">Clean code blocks, one-tap copy and full-screen preview.</span></p></div>
   <div class="c"><i>📎</i><h3><span data-l="bn">ছবি ও ফাইল</span><span data-l="en">Photos &amp; files</span></h3><p><span data-l="bn">ক্যামেরা, গ্যালারি বা ফাইল যোগ করে প্রশ্ন করুন।</span><span data-l="en">Add camera shots, photos or files and ask about them.</span></p></div>
   <div class="c"><i>🔒</i><h3><span data-l="bn">আলাদা চ্যাট হিস্ট্রি</span><span data-l="en">Private chat history</span></h3><p><span data-l="bn">প্রতিটা অ্যাকাউন্টের চ্যাট আলাদা থাকে।</span><span data-l="en">Every account keeps its own chats, separate from others.</span></p></div>
-  <div class="c"><i>🧠</i><h3><span data-l="bn">মেমোরি ও ওয়েব সার্চ</span><span data-l="en">Memory &amp; web search</span></h3><p><span data-l="bn">দরকার হলে চালু করুন, না চাইলে বন্ধ রাখুন।</span><span data-l="en">Turn them on when you need them, off when you don't.</span></p></div>
+  <div class="c"><i>🧠</i><h3><span data-l="bn">স্মৃতি ও ইন্টারনেট অনুসন্ধান</span><span data-l="en">Memory &amp; web search</span></h3><p><span data-l="bn">দরকার হলে চালু করুন, না চাইলে বন্ধ রাখুন।</span><span data-l="en">Turn them on when you need them, off when you don't.</span></p></div>
  </div>
 </section>
 </div>
@@ -82,11 +83,11 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:40px 0}
 <section>
  <h2><span data-l="bn">ইনস্টল করবেন যেভাবে</span><span data-l="en">How to install</span></h2><p class="lead">&nbsp;</p>
  <div class="g st">
-  <div class="c"><h3><span data-l="bn">APK ডাউনলোড করুন</span><span data-l="en">Download the APK</span></h3><p><span data-l="bn">উপরের ডাউনলোড বাটনে ট্যাপ করুন।</span><span data-l="en">Tap the download button above.</span></p></div>
+  <div class="c"><h3><span data-l="bn">এপিকে ডাউনলোড করুন</span><span data-l="en">Download the APK</span></h3><p><span data-l="bn">উপরের ডাউনলোড বাটনে ট্যাপ করুন।</span><span data-l="en">Tap the download button above.</span></p></div>
   <div class="c"><h3><span data-l="bn">অনুমতি দিন</span><span data-l="en">Allow installs</span></h3><p><span data-l="bn">ফোন চাইলে "এই সোর্স থেকে ইনস্টল করার অনুমতি" চালু করুন।</span><span data-l="en">If your phone asks, allow installing from this source.</span></p></div>
-  <div class="c"><h3><span data-l="bn">ইনস্টল করে খুলুন</span><span data-l="en">Install &amp; open</span></h3><p><span data-l="bn">ফাইলটি খুলে Install চাপুন, তারপর লগইন করে শুরু করুন।</span><span data-l="en">Open the file, tap Install, then log in and start chatting.</span></p></div>
+  <div class="c"><h3><span data-l="bn">ইনস্টল করে খুলুন</span><span data-l="en">Install &amp; open</span></h3><p><span data-l="bn">ফাইলটি খুলে ইনস্টল চাপুন, তারপর লগইন করে শুরু করুন।</span><span data-l="en">Open the file, tap Install, then log in and start chatting.</span></p></div>
  </div>
- <p class="note"><span data-l="bn">Play Protect সতর্কতা দেখালে "Install anyway" বেছে নিন, কারণ অ্যাপটি Play Store এর বাইরে থেকে আসছে।</span><span data-l="en">If Play Protect shows a warning, choose "Install anyway", since the app is installed from outside the Play Store.</span></p>
+ <p class="note"><span data-l="bn">প্লে প্রোটেক্ট সতর্কতা দেখালে "তবুও ইনস্টল করুন" বেছে নিন, কারণ অ্যাপটি প্লে স্টোরের বাইরে থেকে আসছে।</span><span data-l="en">If Play Protect shows a warning, choose "Install anyway", since the app is installed from outside the Play Store.</span></p>
 </section>
 
 <section style="padding-top:10px">
@@ -95,7 +96,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:40px 0}
   <a class="btn dl" href="#"><span data-l="bn">অ্যান্ড্রয়েডের জন্য ডাউনলোড</span><span data-l="en">Download for Android</span></a>
  </div>
 </section>
-<footer>&copy; 2026 Zahirul Islam (Zohir) &middot; ZohirAi</footer>
+<footer><span data-l="en">&copy; 2026 Zahirul Islam (Zohir) &middot; ZohirAi</span><span data-l="bn">&copy; ২০২৬ Zahirul Islam (Zohir) &middot; ZohirAi</span></footer>
 </div>
 
 <script>
@@ -104,7 +105,7 @@ var APK="ZohirAi.apk";
 document.querySelectorAll(".dl").forEach(function(a){a.href=APK;a.setAttribute("download","")});
 var h=document.documentElement,b=document.getElementById("lg");
 function set(l){h.lang=l;b.textContent=l==="bn"?"English":"বাংলা";try{localStorage.setItem("zl",l)}catch(e){}}
-var s="bn";try{s=localStorage.getItem("zl")||"bn"}catch(e){}
+var s="en";try{s=localStorage.getItem("zl")||"en"}catch(e){}
 set(s);b.onclick=function(){set(h.lang==="bn"?"en":"bn")};
 </script>
 </body>
